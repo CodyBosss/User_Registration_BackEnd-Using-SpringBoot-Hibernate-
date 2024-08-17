@@ -5,13 +5,12 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
-import javax.management.relation.Role;
-
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.codybosss.Dao.RoleRepository;
 import com.codybosss.Dao.UserRepository;
+import com.codybosss.entity.Role;
 import com.codybosss.entity.RoleName;
 import com.codybosss.entity.User;
 

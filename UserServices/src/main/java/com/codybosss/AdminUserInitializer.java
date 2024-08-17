@@ -3,12 +3,11 @@ package com.codybosss;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.management.relation.Role;
-
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import com.codybosss.Dao.RoleRepository;
+import com.codybosss.entity.Role;
 import com.codybosss.entity.RoleName;
 import com.codybosss.service.UserService;
 
