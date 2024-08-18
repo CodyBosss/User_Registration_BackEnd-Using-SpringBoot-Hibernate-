@@ -3,6 +3,7 @@ package com.codybosss;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -13,10 +14,11 @@ import com.codybosss.service.UserService;
 
 @Component
 public class AdminUserInitializer implements CommandLineRunner {
-
+		
     private final UserService userService;
     private final RoleRepository roleRepository;
 
+    @Autowired
     public AdminUserInitializer(UserService userService, RoleRepository roleRepository) {
         this.userService = userService;
         this.roleRepository = roleRepository;
